@@ -1,0 +1,247 @@
+.details-page-container {
+  background-color: #fff;
+  padding: 2rem;
+  font-family: 'Satoshi', sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+.logo-fixed {
+  position: absolute;
+  top: 6rem;
+  left: 2rem;
+  z-index: 10;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.logo-shape {
+  display: flex;
+  flex-direction: row;
+  width: 28px;
+  height: 28px;
+}
+
+.half-circle {
+  width: 14px;
+  height: 28px;
+  background-color: #FF6428;
+}
+
+.left {
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.right {
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+
+.logo-text {
+  font-size: 20px;
+  color: #000;
+}
+
+.details-hero-wrapper {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.details-hero-left {
+  flex: 1;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-hero-left h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.details-hero-right {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(to bottom, #ff854a, #ff6428);
+  border-bottom-left-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details-hero-image-mask {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.model-overlay-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+}
+
+.bottom-logo {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 12px 16px;
+  border-radius: 999px;
+  z-index: 5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details-tabs {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  margin-top: 3rem;
+}
+
+.details-tabs button {
+  flex: 1;
+  text-align: center;
+  padding: 1rem 0;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.details-tabs .active-tab {
+  border-color: #FF6428;
+  color: #FF6428;
+  font-weight: 600;
+}
+
+.specs-section {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+.specs-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.specs-section li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.musicians-section {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+
+.musician-card {
+  background-color: #fff3ed;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 240px;
+  transition: transform 0.2s ease;
+}
+
+.musician-card:hover {
+  transform: translateY(-4px);
+}
+
+.musician-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.musician-card p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.musician-card p strong {
+  font-size: 1.1rem;
+}
+
+.show-more-button {
+  padding: 0.6rem 1.2rem;
+  background-color: #FF6428;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.show-more-button:hover {
+  background-color: #e65820;
+}
+
+.back-home-button {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
+  background-color: white;
+  border: 2px solid #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.2s ease;
+  color: #444;
+}
+
+.back-home-button:hover {
+  border-color: #FF6428;
+  background-color: #fff1e8;
+  color: #FF6428;
+  box-shadow: 0 0 0 2px rgba(255, 100, 40, 0.2);
+}
+
+.model-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+

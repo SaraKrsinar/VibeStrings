@@ -1,0 +1,70 @@
+const resources = {
+  en: {
+    translation: {
+      brandsTitle: "Guitar Brands",
+      loadingBrands: "Loading brands...",
+      errorBrands: "Error loading brands",
+      guitarModels: "Guitar Models",
+      searchPlaceholder: "Search by name",
+      allTypes: "All Types",
+      electric: "Electric",
+      bass: "Bass",
+      type: "Type",
+      price: "Price",
+      specs: "Specs",
+      musicians: "Musicians",
+      showMore: "Show More",
+      loadingModels: "Loading models...",
+      loadingDetails: "Loading guitar details...",
+      errorModels: "Error loading models!",
+      errorDetails: "Error loading details!",
+      exploreCollections: "Explore 50k+ latest collections of branded guitars online with VibeStrings."
+    },
+  },
+  mk: {
+    translation: {
+      brandsTitle: "Гитарски Брендови",
+      loadingBrands: "Се вчитуваат брендовите...",
+      errorBrands: "Грешка при вчитување на брендовите",
+      guitarModels: "Гитарски Модели",
+      searchPlaceholder: "Пребарај по име ",
+      allTypes: "Сите Типови",
+      electric: "Електрични",
+      bass: "Бас",
+      type: "Тип",
+      price: "Цена",
+      specs: "Спецификации",
+      musicians: "Музичари",
+      showMore: "Прикажи Повеќе",
+      loadingModels: "Се вчитуваат моделите...",
+      loadingDetails: "Се вчитуваат деталите...",
+      errorModels: "Грешка при вчитување модели!",
+      errorDetails: "Грешка при вчитување детали!",
+      exploreCollections: "Истражи 50.000+ најнови колекции од брендирани гитари онлајн со VibeStrings."
+    },
+  },
+  al: {
+    translation: {
+      brandsTitle: "Markat e Kitarave",
+      loadingBrands: "Duke i ngarkuar markat...",
+      errorBrands: "Gabim gjatë ngarkimit të markave",
+      guitarModels: "Modelet e Kitarës",
+      searchPlaceholder: "Kërko sipas emrit ",
+      allTypes: "Të gjitha Llojet",
+      electric: "Elektrike",
+      bass: "Bas",
+      type: "Lloj",
+      price: "Çmimi",
+      specs: "Specifikat",
+      musicians: "Muzikantë",
+      showMore: "Shfaq Më Shumë",
+      loadingModels: "Duke ngarkuar modelet...",
+      loadingDetails: "Duke ngarkuar detajet...",
+      errorModels: "Gabim gjatë ngarkimit të modeleve!",
+      errorDetails: "Gabim gjatë ngarkimit të detajeve!",
+      exploreCollections: "Eksploro 50,000+ koleksione të fundit të kitarave me markë në internet me VibeStrings."
+    },
+  },
+};
+
+export default resources;
