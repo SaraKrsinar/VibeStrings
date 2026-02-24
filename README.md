@@ -115,7 +115,7 @@ https://graphql-api-brown.vercel.app/api/graphql
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/SaraKrsinar/VibeStrings.git
-cd vibe-strings
+cd VibeStrings
 
 ### 2. Install Dependencies
 npm install
