@@ -1,126 +1,146 @@
+# VibeStrings
 
-# Getting Started with Create React App
+VibeStrings is a modern online guitar shop built with React and Apollo
+Client, designed to simulate a real-world SaaS storefront experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The goal of the project was not just to display products, but to build a
+structured, scalable frontend application that integrates with a GraphQL
+API, supports internationalization, and delivers smooth user
+interactions such as filtering and infinite scrolling.
 
-## Available Scripts
+------------------------------------------------------------------------
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+VibeStrings allows users to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   Browse guitar models dynamically
+-   Search by model name
+-   Filter by guitar type
+-   Load more products with infinite scroll
+-   Switch language (English / Macedonian / Albanian)
+-   Navigate between pages with clean routing
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The application consumes a GraphQL API and demonstrates real-world
+frontend architecture decisions, including state handling, API
+integration, and UX optimization.
 
-### `npm test`
+------------------------------------------------------------------------
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Why I Built This
 
-### `npm run build`
+I built VibeStrings to deepen my frontend skills beyond static UI
+development.\
+This project helped me focus on:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   API-driven architecture
+-   Scalable component structure
+-   Handling asynchronous data properly
+-   Clean separation between UI and data logic
+-   Designing user-friendly interactions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+It played a significant role in strengthening my frontend development
+skills and product thinking.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+------------------------------------------------------------------------
 
-### `npm run eject`
+## Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-   React
+-   Apollo Client
+-   GraphQL
+-   React Router
+-   i18next (Internationalization)
+-   CSS (custom styling)
+-   Create React App
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+------------------------------------------------------------------------
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Key Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Search & Filtering
 
-## Learn More
+Users can search guitars by name and filter by type dynamically.\
+The filtering logic integrates directly with GraphQL queries.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Infinite Scroll
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Products load progressively as users scroll, simulating real e-commerce
+behavior.
 
-### Code Splitting
+### Internationalization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Language switcher supports:
 
-### Analyzing the Bundle Size
+-   English
+-   Macedonian
+-   Albanian
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Static UI text updates instantly based on the selected language.
+(Not everything is translated yet, for a future improvement - this is just a demo)
 
-### Making a Progressive Web App
+### GraphQL Integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+All product data is fetched via Apollo Client from a GraphQL API.\
+Queries are structured and optimized for real-world usage.
 
-### Advanced Configuration
+------------------------------------------------------------------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Architecture Highlights
 
-### Deployment
+-   Component-based structure
+-   Clear separation between UI and data fetching
+-   Centralized routing logic
+-   Reusable product card component
+-   Controlled state management for search and filters
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The project is structured to allow future extension (cart system,
+authentication, checkout, etc.).
 
-### `npm run build` fails to minify
+------------------------------------------------------------------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Local Development
 
-# VibeStrings – Online Guitar Shop
-
-VibeStrings is a modern React application for browsing, searching, and discovering guitar brands and models. It uses Apollo Client to fetch data from a GraphQL API and provides a dynamic, multilingual shopping experience.
-
-## API Source
-All data is fetched from the GraphQL endpoint:
-https://graphql-api-brown.vercel.app/api/graphql
-
-## Features
-
-### Page 1 – Guitar Brands
-- Displays a list of all available guitar brands.
-- Users can click on a brand to view its guitar models.
-
-### Page 2 – Guitar Models
-- Shows models for the selected brand.
-- **Search bar** to filter guitars by name.
-- **Dropdown filter** to narrow models by guitar type (Electric, Bass, Acoustic).
-- **Infinite scroll** to load more models as the user scrolls.
-
-### Page 3 – Guitar Details
-- Details page for a selected guitar model.
-- **Specs tab**: Displays specifications such as body wood, pickups, bridge, etc.
-- **Musicians tab**: Lists musicians using this guitar.
-  - Displays 2 musicians at a time.
-  - "Show More" button reveals more musicians in sets of 2.
-
-### Language Support (i18n)
-- **Language switcher** in the footer.
-- Supports **English**, **Macedonian**, and **Albanian**.
-- Almost all static text updates dynamically based on the selected language.
-
-### Technical Stack
-- React
-- Apollo Client
-- GraphQL
-- React Router
-- CSS Modules
-- `react-i18next` for internationalization
-
-## Getting Started
-
-### 1. Clone the Repository
-```bash
+``` bash
 git clone https://github.com/SaraKrsinar/VibeStrings.git
 cd VibeStrings
-
-### 2. Install Dependencies
 npm install
-
-### 3. Run the App
 npm start
 ```
->>>>>>> 81cac4a43402e22dd53e7edaab950a350370b8d1
+
+Runs at:
+
+http://localhost:3000
+
+------------------------------------------------------------------------
+
+## Production Build
+
+``` bash
+npm run build
+```
+
+Output directory:
+
+build/
+
+------------------------------------------------------------------------
+
+## Future Improvements
+
+-   Add shopping cart functionality
+-   Implement user authentication
+-   Add checkout flow
+-   Improve loading states and skeleton UI
+-   Migrate from Create React App to Vite for improved performance
+-   Connect to a custom backend instead of demo API
+
+------------------------------------------------------------------------
+
+## What This Project Demonstrates
+
+-   Real API consumption using GraphQL
+-   Advanced frontend interactions (infinite scroll)
+-   Product-oriented thinking
+-   Internationalization support
+-   Clean, scalable component structure
